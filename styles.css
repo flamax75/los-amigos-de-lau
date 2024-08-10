@@ -1,9 +1,11 @@
+/* Estilos Generales */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
 
+/* Estilos para el Título de la Página Principal */
 .titulo-pagina {
     position: absolute;
     top: 20px;
@@ -30,7 +32,6 @@ body {
     /* Transición para el hover */
 }
 
-/* Efecto hover para el rectángulo del título */
 .titulo-pagina:hover {
     background-color: #e1e432;
     /* Cambia el fondo al amarillo claro al pasar el ratón */
@@ -40,23 +41,19 @@ body {
     /* Intensifica la sombra en hover */
 }
 
+/* Estilos para la Página Principal */
 .inicio {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     min-height: 100vh;
-    background-image: url('images/madera1c.jpg');
+    background-image: url('images/madera1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    /* Fija la imagen de fondo */
-    position: relative;
-    z-index: 1;
     padding: 220px 20px 120px;
-    /* Espacio superior e inferior para la versión de escritorio */
     box-sizing: border-box;
-    /* Incluye padding en el tamaño total */
 }
 
 .marcos {
@@ -88,7 +85,6 @@ body {
     /* Transiciones suaves para el hover */
 }
 
-/* Efecto hover en los círculos */
 .marco:hover {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
     transform: scale(1.05);
@@ -134,14 +130,21 @@ body {
     /* Cambia el texto a rojo al pasar el ratón */
 }
 
+/* Estilos para las Páginas Internas */
 .pagina-interna {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    background-image: url('images/madera1.jpg');
+    /* Mismo fondo que en la página principal */
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    /* Fija la imagen de fondo */
+    box-sizing: border-box;
+    padding: 20px;
     text-align: center;
 }
 
@@ -154,17 +157,21 @@ body {
     background-color: #8B4513;
     color: #fff;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Ajustes responsivos */
+.boton-volver:hover {
+    background-color: #A0522D;
+    /* Color de fondo más claro en hover */
+}
+
+/* Ajustes Responsivos */
 @media (max-width: 768px) {
     .marco {
         width: 120px;
         height: 120px;
         margin: 50px 30px;
         /* Aumenta el espacio vertical y lateral entre los círculos */
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        /* Asegura transiciones en móviles */
     }
 
     .marco p {
@@ -182,6 +189,15 @@ body {
         padding: 8px 15px;
         /* Ajusta el padding del título en móviles */
     }
+
+    .pagina-interna {
+        padding: 40px 20px;
+    }
+
+    .boton-volver {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -190,8 +206,6 @@ body {
         height: 100px;
         margin: 60px 30px;
         /* Aumenta el espacio vertical y lateral en pantallas pequeñas */
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        /* Asegura transiciones en móviles */
     }
 
     .marco p {
@@ -208,5 +222,14 @@ body {
         /* Reduce más el tamaño del título en pantallas muy pequeñas */
         padding: 6px 10px;
         /* Ajusta el padding del título en pantallas muy pequeñas */
+    }
+
+    .pagina-interna {
+        padding: 30px 10px;
+    }
+
+    .boton-volver {
+        font-size: 12px;
+        padding: 6px 12px;
     }
 }
