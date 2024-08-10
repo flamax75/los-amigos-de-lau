@@ -49,8 +49,8 @@ body {
     background-image: url('images/madera1.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: repeat;
-    /* Repite la imagen de fondo para cubrir toda la pantalla */
+    background-attachment: fixed;
+    /* Fija la imagen de fondo */
     position: relative;
     z-index: 1;
     padding: 220px 20px 120px;
