@@ -43,7 +43,7 @@ body {
 .inicio {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     height: 100vh;
     background-image: url('images/madera1.jpg');
@@ -51,15 +51,16 @@ body {
     background-position: center;
     position: relative;
     z-index: 1;
-    padding: 100px 20px;
-    /* Espacio para el título y margen */
+    padding: 220px 20px 120px;
+    /* Aumenta más el espacio superior e inferior para la versión de escritorio */
     box-sizing: border-box;
     /* Incluye padding en el tamaño total */
 }
 
 .marcos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* Asegura espacio entre los elementos */
     flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
@@ -75,7 +76,8 @@ body {
     border: 5px solid #e1e432;
     /* Cambia el borde al color amarillo claro */
     text-align: center;
-    margin: 20px;
+    margin: 30px 20px;
+    /* Aumenta el espacio entre los círculos */
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.8);
     /* Fondo blanco semitransparente */
@@ -157,7 +159,8 @@ body {
     .marco {
         width: 120px;
         height: 120px;
-        margin: 15px;
+        margin: 30px 10px;
+        /* Añade más espacio vertical entre los círculos */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         /* Asegura transiciones en móviles */
     }
@@ -167,8 +170,8 @@ body {
     }
 
     .inicio {
-        padding: 80px 10px;
-        /* Reduce el padding en móviles */
+        padding: 120px 10px;
+        /* Aumenta el padding en móviles para mayor separación */
     }
 
     .titulo-pagina {
@@ -183,7 +186,8 @@ body {
     .marco {
         width: 100px;
         height: 100px;
-        margin: 10px;
+        margin: 30px 10px;
+        /* Mantén espacio vertical y horizontal */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         /* Asegura transiciones en móviles */
     }
@@ -193,8 +197,8 @@ body {
     }
 
     .inicio {
-        padding: 60px 5px;
-        /* Reduce aún más el padding en pantallas muy pequeñas */
+        padding: 100px 5px;
+        /* Aumenta el padding en pantallas muy pequeñas para mayor separación */
     }
 
     .titulo-pagina {
