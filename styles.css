@@ -159,8 +159,8 @@ body {
     .marco {
         width: 120px;
         height: 120px;
-        margin: 30px 10px;
-        /* Añade más espacio vertical entre los círculos */
+        margin: 50px 30px;
+        /* Aumenta el espacio vertical y lateral entre los círculos */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         /* Asegura transiciones en móviles */
     }
@@ -186,8 +186,8 @@ body {
     .marco {
         width: 100px;
         height: 100px;
-        margin: 30px 10px;
-        /* Mantén espacio vertical y horizontal */
+        margin: 60px 30px;
+        /* Aumenta el espacio vertical y lateral en pantallas pequeñas */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         /* Asegura transiciones en móviles */
     }
