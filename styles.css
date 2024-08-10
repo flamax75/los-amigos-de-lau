@@ -45,14 +45,16 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url('images/madera1.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: repeat;
+    /* Repite la imagen de fondo para cubrir toda la pantalla */
     position: relative;
     z-index: 1;
     padding: 220px 20px 120px;
-    /* Aumenta más el espacio superior e inferior para la versión de escritorio */
+    /* Espacio superior e inferior para la versión de escritorio */
     box-sizing: border-box;
     /* Incluye padding en el tamaño total */
 }
