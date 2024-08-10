@@ -23,9 +23,21 @@ body {
     max-width: 90%;
     white-space: nowrap;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    /* Sombra más sutil para el rectángulo */
+    /* Sombra para el rectángulo */
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
     /* Sombra para el texto */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    /* Transición para el hover */
+}
+
+/* Efecto hover para el rectángulo del título */
+.titulo-pagina:hover {
+    background-color: #e1e432;
+    /* Cambia el fondo al amarillo claro al pasar el ratón */
+    color: #B22222;
+    /* Cambia el texto a rojo al pasar el ratón */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    /* Intensifica la sombra en hover */
 }
 
 .inicio {
@@ -33,13 +45,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 100vh;
-    /* Asegura que cubre al menos el 100% de la pantalla */
+    height: 100vh;
     background-image: url('images/madera1.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    /* Evita que la imagen se repita */
     position: relative;
     z-index: 1;
     padding: 100px 20px;
@@ -143,17 +152,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .inicio {
-        padding: 80px 15px;
-        /* Ajuste del padding en tabletas */
-        height: auto;
-        /* Permite que la altura se ajuste automáticamente */
-        min-height: 100vh;
-        /* Asegura que siempre cubre toda la pantalla */
-        background-attachment: scroll;
-        /* Desactiva el fondo fijo para evitar estiramiento */
-    }
-
     .marco {
         width: 120px;
         height: 120px;
@@ -165,20 +163,9 @@ body {
 }
 
 @media (max-width: 480px) {
-    .inicio {
-        padding: 50px 10px;
-        /* Reduce el padding en móviles */
-        height: auto;
-        /* Permite que la altura se ajuste automáticamente */
-        min-height: 100vh;
-        /* Asegura que siempre cubre toda la pantalla */
-        background-attachment: scroll;
-        /* Desactiva el fondo fijo para evitar estiramiento */
-    }
-
     .marco {
         width: 100px;
-        height: 100px;
+        height: 100%;
     }
 
     .marco p {
