@@ -69,7 +69,7 @@ body {
 
 .marco {
     width: 150px;
-    /* Aumenta el tamaño de los círculos */
+    /* Ajusta el tamaño de los círculos */
     height: 150px;
     border-radius: 50%;
     border: 5px solid #e1e432;
@@ -84,6 +84,7 @@ body {
     /* Transiciones suaves para el hover */
 }
 
+/* Efecto hover en los círculos */
 .marco:hover {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
     transform: scale(1.05);
@@ -100,7 +101,7 @@ body {
 .marco p {
     margin-top: 10px;
     font-size: 16px;
-    /* Aumenta el tamaño del texto para acompañar el tamaño del círculo */
+    /* Ajusta el tamaño del texto para acompañar el tamaño del círculo */
     font-weight: bold;
     color: #d7ec16;
     /* Mismo color de texto que el título */
@@ -151,24 +152,55 @@ body {
     border-radius: 5px;
 }
 
+/* Ajustes responsivos */
 @media (max-width: 768px) {
     .marco {
         width: 120px;
         height: 120px;
+        margin: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Asegura transiciones en móviles */
     }
 
     .marco p {
         font-size: 14px;
+    }
+
+    .inicio {
+        padding: 80px 10px;
+        /* Reduce el padding en móviles */
+    }
+
+    .titulo-pagina {
+        font-size: 28px;
+        /* Reduce el tamaño del título en móviles */
+        padding: 8px 15px;
+        /* Ajusta el padding del título en móviles */
     }
 }
 
 @media (max-width: 480px) {
     .marco {
         width: 100px;
-        height: 100%;
+        height: 100px;
+        margin: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Asegura transiciones en móviles */
     }
 
     .marco p {
         font-size: 12px;
+    }
+
+    .inicio {
+        padding: 60px 5px;
+        /* Reduce aún más el padding en pantallas muy pequeñas */
+    }
+
+    .titulo-pagina {
+        font-size: 24px;
+        /* Reduce más el tamaño del título en pantallas muy pequeñas */
+        padding: 6px 10px;
+        /* Ajusta el padding del título en pantallas muy pequeñas */
     }
 }
